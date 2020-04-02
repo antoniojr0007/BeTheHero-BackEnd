@@ -1,22 +1,22 @@
 module.exports = {
   appInfo: {
-    appUrl: 'http://localhost',
-    appPort: 3333,
+    appUrl: process.env.TOKEN_EXPIRED,
+    appPort: process.env.TOKEN_EXPIRED,
   },
   token: {
-    secret: '0575fc1b21534f51afe5fcd50aece28a',
-    expired: '1d',
+    secret: process.env.TOKEN_SECRET,
+    expired: process.env.TOKEN_EXPIRED,
   },
   mail: {
     from: '"Be The Hero 💪" <hero@bethehero.com>',
   },
   smtp: {
-    host: 'smtp.mailtrap.io',
-    port: 2525,
-    secure: false,
+    host: process.env.MAIL_HOST,
+    port: process.env.MAIL_PORT,
+    secure: process.env.MAIL_SECURE,
     auth: {
-      user: '0fa8a8434b393b',
-      password: 'e1ad479e9342d4',
+      user: process.env.MAIL_USER,
+      password: process.env.MAIL_PASS,
     },
   },
 };

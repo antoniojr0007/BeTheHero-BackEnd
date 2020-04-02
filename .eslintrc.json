@@ -4,7 +4,7 @@
     "es6": true,
     "node": true
   },
-  "extends": ["plugin:vue/essential", "airbnb-base", "prettier"],
+  "extends": ["airbnb-base", "prettier"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -12,8 +12,10 @@
   "parserOptions": {
     "ecmaVersion": 2018
   },
-  "plugins": ["vue", "prettier"],
+  "plugins": ["prettier"],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "no-param-reassign": "off",
+    "class-methods-use-this": "off"
   }
 }
